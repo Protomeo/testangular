@@ -1,0 +1,49 @@
+<div id="divPrincipale">
+    <div>
+        <h1 >Calcolatrice</h1>
+    </div>
+    
+    <div>
+        <div type="text">{{input}}</div>
+    </div>
+
+    <div>
+        <div type="text">{{risultato}}</div>
+    </div>
+
+    <div>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="pulisciTutto()">C</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="cancella()">&lt;&minus;</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore('/')">/</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore('(')">(</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore(')')">)</button>
+    </div>
+
+    <div>
+        
+        <button mat-stroked-button (click)="inputNum('7')">7</button>
+        <button mat-stroked-button (click)="inputNum('8')">8</button>
+        <button mat-stroked-button (click)="inputNum('9')">9</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore('*')">X</button>
+    </div>
+
+    <div>
+        <button mat-stroked-button (click)="inputNum('4')">4</button>
+        <button mat-stroked-button (click)="inputNum('5')">5</button>
+        <button mat-stroked-button (click)="inputNum('6')">6</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore('-')">&minus;</button>
+    </div>
+
+    <div>
+        <button mat-stroked-button (click)="inputNum('1')">1</button>
+        <button mat-stroked-button (click)="inputNum('2')">2</button>
+        <button mat-stroked-button (click)="inputNum('3')">3</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputOperatore('+')">&plus;</button>
+    </div>
+
+    <div>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="inputNum('.')">.</button>
+        <button mat-stroked-button (click)="inputNum('0')">0</button>
+        <button mat-mini-fab class="mat-elevation-z0" (click)="getCalcolo()">=</button>
+    </div>
+</div>
